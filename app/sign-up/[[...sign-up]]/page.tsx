@@ -10,7 +10,7 @@ export default function SignUpPage() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-text-primary mb-2">
-            Create your <span className="text-accent">SimpleClaw</span> account
+            Create your <span className="text-accent">ClawBolt</span> account
           </h1>
           <p className="text-text-secondary">
             Get your AI agent running in under a minute

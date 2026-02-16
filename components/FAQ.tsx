@@ -7,8 +7,8 @@ import { AnimatedWords } from "@/components/AnimatedWords";
 
 const faqs = [
   {
-    question: "What is SimpleClaw?",
-    answer: "SimpleClaw is a managed OpenClaw hosting service. We run the OpenClaw infrastructure 24/7 — you just connect your Telegram bot by sending us your token, and your AI agent goes live in under a minute. No servers to manage, no code to write.",
+    question: "What is ClawBolt?",
+    answer: "ClawBolt is a managed OpenClaw hosting service. We run the OpenClaw infrastructure 24/7 — you just connect your Telegram bot by sending us your token, and your AI agent goes live in under a minute. No servers to manage, no code to write.",
   },
   {
     question: "Do I need to set up OpenClaw myself?",
@@ -96,7 +96,7 @@ export function FAQ() {
             <AnimatedWords text="Frequently Asked" accentWords={["Asked"]} startDelay={0.04} />
           </h2>
           <p className="text-muted text-lg">
-            Everything you need to know about SimpleClaw
+            Everything you need to know about ClawBolt
           </p>
         </motion.div>
 

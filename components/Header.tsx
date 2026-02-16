@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { SimpleClawLogo } from "./SimpleClawLogo";
+import { ClawBoltLogo } from "./ClawBoltLogo";
 
 const navItems = [
   { label: "Comparison", href: "#comparison" },
@@ -25,9 +25,9 @@ export function Header() {
           <Link
             href="/"
             className="hover:opacity-90 transition-opacity focus-ring rounded-lg p-1"
-            aria-label="SimpleClaw Home"
+            aria-label="ClawBolt Home"
           >
-            <SimpleClawLogo size="sm" />
+            <ClawBoltLogo size="sm" />
           </Link>
 
           <div className="hidden md:flex items-center gap-5">
@@ -44,7 +44,7 @@ export function Header() {
 
           <div className="flex items-center gap-2 md:gap-3">
             <a
-              href="mailto:hello@simpleclaw.dev"
+              href="mailto:hello@clawbolt.dev"
               className="text-sm text-muted hover:text-text-primary transition-colors px-2.5 py-2"
             >
               Contact

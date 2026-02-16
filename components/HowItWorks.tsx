@@ -29,7 +29,7 @@ const steps = [
     helper: "Secure handoff. We configure and deploy everything for you.",
     action: {
       type: "email",
-      href: "mailto:hello@simpleclaw.dev?subject=My%20Bot%20Token&body=Hi%20SimpleClaw%20team,%0A%0AHere's%20my%20Telegram%20bot%20token:%0A%0A[ paste your token here ]%0A%0AReady%20to%20go%20live!",
+      href: "mailto:hello@simpleclaw.dev?subject=My%20Bot%20Token&body=Hi%20ClawBolt%20team,%0A%0AHere's%20my%20Telegram%20bot%20token:%0A%0A[ paste your token here ]%0A%0AReady%20to%20go%20live!",
       label: "Send Token",
     },
   },

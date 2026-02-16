@@ -3,13 +3,13 @@ import { ClerkProvider } from '@clerk/nextjs'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'SimpleClaw - AI Agents Made Simple',
-  description: 'Deploy autonomous AI agents in minutes. No complex infrastructure, no steep learning curve — just describe what you want and let it run.',
-  keywords: ['AI', 'agents', 'automation', 'deployment', 'simple', 'cloud'],
-  authors: [{ name: 'SimpleClaw' }],
+  title: 'ClawBolt - Deploy Telegram Bots in Seconds',
+  description: 'Lightning-fast bot deployment. One command, one bot, zero infrastructure headaches. Bring your API keys, we handle the runtime.',
+  keywords: ['Telegram bot', 'AI bot', 'deployment', 'hosting', 'OpenClaw', 'automation'],
+  authors: [{ name: 'ClawBolt' }],
   openGraph: {
-    title: 'SimpleClaw - AI Agents Made Simple',
-    description: 'Deploy autonomous AI agents in minutes.',
+    title: 'ClawBolt - Deploy Telegram Bots in Seconds',
+    description: 'Lightning-fast bot deployment. One command, one bot, zero infrastructure.',
     type: 'website',
   },
 }

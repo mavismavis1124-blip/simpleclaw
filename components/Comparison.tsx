@@ -38,7 +38,7 @@ export function Comparison() {
           className="text-center mb-16"
         >
           <h2 id="comparison-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary mb-4">
-            <AnimatedWords text="DIY vs SimpleClaw" accentWords={["SimpleClaw"]} startDelay={0.04} />
+            <AnimatedWords text="DIY vs ClawBolt" accentWords={["ClawBolt"]} startDelay={0.04} />
           </h2>
           <p className="text-muted text-lg max-w-2xl mx-auto">
             See how we eliminate all the setup headaches and get you running in under a minute.
@@ -103,7 +103,7 @@ export function Comparison() {
             </div>
           </motion.div>
 
-          {/* SimpleClaw Column */}
+          {/* ClawBolt Column */}
           <motion.div
             initial={shouldReduceMotion ? {} : { opacity: 0, x: 28 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -118,7 +118,7 @@ export function Comparison() {
                   <Check className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-text-primary">SimpleClaw</h3>
+                  <h3 className="text-lg font-semibold text-text-primary">ClawBolt</h3>
                   <p className="text-sm text-accent">We handle everything</p>
                 </div>
               </div>

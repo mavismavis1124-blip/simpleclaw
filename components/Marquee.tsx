@@ -11,7 +11,7 @@ import {
   HeartHandshake, Megaphone, Sparkles, Zap, Bot
 } from "lucide-react";
 
-// 40+ use cases like SimpleClaw
+// 40+ use cases like ClawBolt
 const useCasesRow1 = [
   { icon: Mail, label: "Read & summarize email" },
   { icon: PenTool, label: "Draft replies" },
@@ -202,7 +202,7 @@ export function Marquee() {
         </div>
       </motion.div>
 
-      {/* PS note like SimpleClaw */}
+      {/* PS note like ClawBolt */}
       <motion.p
         initial={shouldReduceMotion ? {} : { opacity: 0.9 }}
         animate={isInView ? { opacity: 1 } : {}}

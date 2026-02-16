@@ -95,7 +95,7 @@ export function Pricing() {
 
           {/* CTA */}
           <a
-            href="mailto:hello@simpleclaw.dev?subject=SimpleClaw%20Signup"
+            href="mailto:hello@simpleclaw.dev?subject=ClawBolt%20Signup"
             className="inline-flex items-center justify-center gap-2 w-full px-6 py-4 font-semibold rounded-xl bg-accent text-white hover:bg-accent-2 transition-all focus-ring"
           >
             Get Started

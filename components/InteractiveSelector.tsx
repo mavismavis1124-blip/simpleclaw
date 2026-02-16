@@ -398,7 +398,7 @@ export function InteractiveSelector() {
           </div>
         </motion.div>
 
-        {/* Section 3: Deploy CTA - SimpleClaw Style */}
+        {/* Section 3: Deploy CTA - ClawBolt Style */}
         <motion.div
           initial={shouldReduceMotion ? {} : { opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}

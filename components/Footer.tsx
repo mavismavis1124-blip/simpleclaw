@@ -1,13 +1,13 @@
 "use client";
 
-import { SimpleClawLogo } from "./SimpleClawLogo";
+import { ClawBoltLogo } from "./ClawBoltLogo";
 
 export function Footer() {
   return (
     <footer className="py-10 border-t border-line bg-bg-void">
       <div className="max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <SimpleClawLogo size="sm" />
+          <ClawBoltLogo size="sm" />
 
           <div className="flex flex-wrap items-center justify-center gap-2 text-sm text-muted">
             <span>Built by</span>

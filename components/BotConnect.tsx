@@ -73,7 +73,7 @@ export function BotConnect() {
                   <MessageCircle className="w-5 h-5 text-accent" aria-hidden="true" />
                 </div>
                 <div>
-                  <p className="font-medium text-text-primary">SimpleClaw Bot</p>
+                  <p className="font-medium text-text-primary">ClawBolt Bot</p>
                   <p className="text-xs text-muted">@simpleclaw_bot</p>
                 </div>
                 <span className="ml-auto text-xs text-green-500">● Online</span>
