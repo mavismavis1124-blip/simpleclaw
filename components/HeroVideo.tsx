@@ -55,7 +55,7 @@ export function HeroVideo() {
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface/85 backdrop-blur border border-line text-sm text-muted mb-7 text-shimmer">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" aria-hidden="true" />
-                Demo-first deployment flow • Built for OpenClaw
+                Deploy OpenClaw with managed infra
               </span>
             </motion.div>
 
@@ -69,7 +69,7 @@ export function HeroVideo() {
               <AnimatedWords text="Deploy OpenClaw" startDelay={0.02} />
               <br />
               <span className="bg-gradient-to-r from-accent via-accent-2 to-[#8A6BFF] bg-clip-text text-transparent animated-gradient-text">
-                <AnimatedWords text="With a live demo UX" startDelay={0.18} />
+                <AnimatedWords text="Under 1 Minute" startDelay={0.18} />
               </span>
             </motion.h1>
 
@@ -79,7 +79,7 @@ export function HeroVideo() {
               transition={{ duration: 0.6, delay: 0.16, ease: [0.22, 1, 0.36, 1] }}
               className="text-lg text-muted max-w-xl mb-8"
             >
-              Let visitors pick model + channel, then immediately see the real deployment demo video
+              Let visitors pick model + channel, then immediately see a real deployment preview
               side-by-side. Fast, clear, and conversion-focused.
             </motion.p>
 
@@ -140,7 +140,7 @@ export function HeroVideo() {
                 href="#the-widget"
                 className="inline-flex items-center gap-2 px-6 py-4 rounded-xl border border-line text-text-primary hover:bg-surface/80 transition-all focus-ring"
               >
-                See interactive demo
+                See setup flow
                 <PlayCircle className="w-5 h-5" aria-hidden="true" />
               </a>
             </motion.div>
@@ -177,7 +177,7 @@ export function HeroVideo() {
             <div className="rounded-[28px] border border-white/10 bg-[#090909] p-3 shadow-[0_20px_90px_rgba(0,0,0,0.7),0_0_80px_rgba(255,30,45,0.18)]">
               <div className="flex items-center justify-between px-3 py-2 border border-line rounded-xl bg-bg-void mb-3">
                 <div className="inline-flex items-center gap-2 text-xs text-text-secondary">
-                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" /> Live demo
+                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" /> Product preview
                 </div>
                 <span className="text-xs text-text-tertiary">hero.mp4</span>
               </div>
@@ -198,7 +198,7 @@ export function HeroVideo() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/25" />
 
                 <div className="absolute left-3 right-3 bottom-3 rounded-xl border border-white/15 bg-black/60 backdrop-blur px-4 py-3">
-                  <p className="text-[11px] uppercase tracking-wide text-text-tertiary mb-1">Demo script</p>
+                  <p className="text-[11px] uppercase tracking-wide text-text-tertiary mb-1">Preview flow</p>
                   <p className="text-sm text-text-primary">Connect Telegram → choose model → deploy OpenClaw in under 60 seconds.</p>
                 </div>
               </div>
