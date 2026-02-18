@@ -1,11 +1,12 @@
 {
-  "name": "simple-showcase",
+  "name": "clawbolt-showcase",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 3456",
     "build": "prisma generate && next build",
     "start": "next start -p 3456",
+    "serve:stable": "npm run build && npm run start",
     "lint": "next lint",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",

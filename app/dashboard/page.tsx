@@ -517,7 +517,7 @@ export default function Dashboard() {
             Welcome back, {user?.firstName || 'there'}
           </h1>
           <p className="text-text-secondary">
-            Manage your AI agents and deployments
+            Manage your OpenClaw deployments and runtime health
           </p>
         </div>
 
@@ -587,7 +587,7 @@ export default function Dashboard() {
             ) : (
               <div className="mb-6 p-6 border border-border-subtle rounded-xl bg-surface-elevated">
                 <h3 className="text-lg font-semibold text-text-primary mb-4">
-                  Deploy Your AI Agent
+                  Deploy Your OpenClaw
                 </h3>
                 <p className="text-text-secondary mb-4">
                   Paste your Telegram bot token and your model API key. The key is used for this deployment.
@@ -699,13 +699,13 @@ export default function Dashboard() {
                   No bots yet
                 </h3>
                 <p className="text-text-secondary mb-4">
-                  Deploy your first AI agent to get started
+                  Deploy your first OpenClaw to get started
                 </p>
                 <button
                   onClick={() => setShowAddBot(true)}
                   className="px-4 py-2 bg-accent-crimson hover:bg-accent-crimson/90 text-white rounded-lg font-medium transition-colors"
                 >
-                  Deploy Your First Bot
+                  Deploy Your First OpenClaw
                 </button>
               </div>
             ) : (
@@ -1019,40 +1019,46 @@ export default function Dashboard() {
         )}
 
         {activeTab === 'billing' && (
-          <div className="max-w-2xl">
-            <div className="p-6 border border-border-subtle rounded-xl bg-surface-elevated mb-6">
+          <div className="max-w-2xl space-y-6">
+            <div className="p-6 border border-border-subtle rounded-xl bg-surface-elevated">
               <h3 className="text-lg font-semibold text-text-primary mb-4">Current Plan</h3>
               <div className="flex items-center justify-between mb-4">
                 <div>
-                  <p className="text-2xl font-bold text-text-primary">Starter</p>
-                  <p className="text-text-secondary">$29/month</p>
+                  <p className="text-2xl font-bold text-text-primary">ClawBolt</p>
+                  <p className="text-text-secondary">$49/month</p>
                 </div>
-                <button className="px-4 py-2 border border-border-subtle hover:bg-surface-hover text-text-primary rounded-lg transition-colors">
-                  Change Plan
-                </button>
+                <span className="inline-flex items-center rounded-lg border border-border-subtle px-3 py-1 text-xs uppercase tracking-wide text-text-secondary">
+                  single tier
+                </span>
               </div>
-              <div className="text-sm text-text-secondary">
-                <p>✓ 3 bots</p>
-                <p>✓ 1,000 messages/month</p>
-                <p>✓ Email support</p>
+              <div className="space-y-1 text-sm text-text-secondary">
+                <p>✓ 1 Telegram bot per subscription</p>
+                <p>✓ Unlimited messages (bounded by your provider key limits)</p>
+                <p>✓ Bring-your-own API key (OpenAI / Anthropic / Gemini)</p>
+                <p>✓ VM spins up on-demand for isolation</p>
               </div>
             </div>
-            
+
             <div className="p-6 border border-border-subtle rounded-xl bg-surface-elevated">
               <h3 className="text-lg font-semibold text-text-primary mb-4">Usage</h3>
               <div className="space-y-4">
                 <div>
                   <div className="flex justify-between text-sm mb-1">
-                    <span className="text-text-secondary">Bots</span>
-                    <span className="text-text-primary">{bots.length} / 3</span>
+                    <span className="text-text-secondary">Bots in this workspace</span>
+                    <span className="text-text-primary">{bots.length} / 1 included per subscription</span>
                   </div>
                   <div className="h-2 bg-surface-hover rounded-full overflow-hidden">
-                    <div 
+                    <div
                       className="h-full bg-accent-crimson rounded-full transition-all"
-                      style={{ width: `${Math.min((bots.length / 3) * 100, 100)}%` }}
+                      style={{ width: `${Math.min((bots.length / 1) * 100, 100)}%` }}
                     />
                   </div>
                 </div>
+                {bots.length > 1 && (
+                  <p className="text-xs text-yellow-500">
+                    You currently have more than one bot configured locally. In production, each bot should map to its own $49 subscription.
+                  </p>
+                )}
               </div>
             </div>
           </div>

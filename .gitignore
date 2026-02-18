@@ -29,3 +29,7 @@ debug-*.js
 *.pem
 
 /app/generated/prisma
+
+# Local Prisma database (development only)
+prisma/dev.db
+prisma/dev.db-journal

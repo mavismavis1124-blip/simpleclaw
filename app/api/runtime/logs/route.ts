@@ -5,6 +5,8 @@ import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import os from 'node:os'
 
+export const dynamic = 'force-dynamic'
+
 const execFileAsync = promisify(execFile)
 
 function redactSensitive(text: string) {
